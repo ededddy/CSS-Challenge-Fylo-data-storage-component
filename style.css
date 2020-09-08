@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+html {
+  background-color: #0c122c;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card {
+  background-color: #1e2c69;
+  color: white;
+  border-radius: 15px;
+  width: 500px;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.5rem;
+}
+
+.progress {
+  width: 100%;
+  height: 15px;
+  background-color: #151e48;
+  border-radius: 9999px;
+  margin-bottom: 15px;
+}
+
+.bar-content {
+  display: block;
+  background-image: linear-gradient(to right, #fb9c90, #da5996);
+  width: 81.5%;
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+}
+
+.bar-content > .dot {
+  background-color: white;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 2px;
+  top: 1px;
+}
+
+.content > .progress-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.content-card > .notification {
+  position: absolute;
+  right: 25px;
+  top: -30px;
+  background-color: white;
+  width: 150px;
+  color: #a0aec0;
+  border-radius: 15px;
+  height: 60px;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.content-card > .notification > p > b {
+  color: black;
+}
+
+.content-card > .notification > .not-end {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  bottom: -20px;
+  right: 0;
+  transform: rotate(180deg);
+  fill: white;
+}
+
+.attribution {
+  position: fixed;
+  font-size: 18px;
+  bottom: 0;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  /* color: hsl(228, 45%, 44%); */
+  color: teal;
+}
+
+.control-panel {
+  width: 400px;
+  height: 250px;
+  background-color: #1e2c69;
+  margin-left: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border-top-right-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.control-panel > .title {
+  margin: 2rem;
+}
+.control-panel > .options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.control-panel > .options > .opt-icon {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: #0c112b;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    background-image: url("./images/bg-mobile.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
